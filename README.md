@@ -1,57 +1,38 @@
 # CorSens
 
-CorSens API
+>What is CorSens api ?
 
-What is CorSens api ?
+-CorSen is an abbrivation for Correct Sentences, it's a newly created api in Java language that enhance better sentences for web/mobile apps users.
 
-CorSen is an abbrivation for Correct Sentences,
-it's a newly created api in Java language that
-enhance better sentences for web/mobile apps users.
+>What problem is CorSens solving ?
+CorSens is currently solving a single problem, to rewrite incorrect sentences with punctuation signs followed with inappropiate case.
 
-What problem is CorSens solving ?
-
-CorSens is currently solving a single problem
-, to rewrite incorrect sentences with
-punctuation signs followed with inappropiate case.
-
-Example
-
+-Example
 A user type the following on Facebook.
 
 
-hi guys, We arE releasing our next mobile App version
-1.x tomorrow,i personally will make sure it'S error
-free and new features are shipped with it.please
-download on playstore latest by 12:00pm g.m.t 
-tomorrow.thanks
+hi guys, We arE releasing our next mobile App version 1.x tomorrow,i personally will make sure it'S error
+free and new features are shipped with it.please download on playstore latest by 12:00pm g.m.t  tomorrow.thanks
 
 
-CorSens approach : This text above have some errors
-which can be auto fix by the api
+>CorSens approach : This text above have some errors which can be auto fix by the api
 
-Errors ( Note ErrSens means error sentence )
+-Errors ( Note ErrSens means error sentence )
 
-1.  ErrSens :hi guys
+ >1.  ErrSens :hi guys
     CoreSens : Hi guys
 
-A sentence must start with capital letter
+ -A sentence must start with capital letter
 
-2. ErrSens : We arE .. mobile App..
+-2. ErrSens : We arE .. mobile App..
    CorSesns : we are... mobile app
 
-Capital letter must not start or end with a word 
-before comma ","  in any
-condition, except for abbrevation and it must all
-be in capital letter.
+>Capital letter must not start or end with a word  before comma ","  in any condition, except for abbrevation and it must all be in capital letter.
 
-The word app is an short hand form of 
-writing "applications"
-which must all be in lower case i.e 
-except for personal pronouns like "I, ..." 
-can only be in capital letter in any sentence
+The word app is an short hand form of  writing "applications" which must all be in lower case i.e  except for personal pronouns like "I, ..."  can only be in capital letter in any sentence
 
 
-3.  ErrSens: ...tomorrow,i personally 
+>3.  ErrSens: ...tomorrow,i personally 
     CorSens: ...tomorrow, I personally
 
 Any word followed with any punctuation must be followed by a white
@@ -148,15 +129,16 @@ Yes, that is currently what we have achieved, more algorith coming to CorSens
 How can I use your api in my Java program ?
 
 Maven users, add to your depencency
-
+<code>
 <dependency>
  <groupId>com.futureisnow.text.corsens</groupId>
  <artifactId>CorSens</artifactId>
  <version>0.1</version>
 </dependency>
-
+</code>
+<br/>
+<code>
 import com.futureisnow.text.corsens.StreamText;
-
 public class App{
 
 private static String message = "hi guys, We arE releasing our next mobile App version
@@ -183,17 +165,11 @@ String output_1 = StreamText.(message)
 System.out.println(output);
 
 }
-
+</code>
+<br/>
 Output :
+<img src="output.png"/>
 
+-Do you still want to asnwer more question ?
 
-Hi guys, we are releasing our next mobile app version
-1.x tomorrow, I personally will make sure it'S error
-free and new features are shipped with it. Please
-download on playstore latest by 12:00pm G.M.T 
-tomorrow. Thanks 
-
-
-Do you still want to asnwer more question ?
-
-No
+<b>No</b>
