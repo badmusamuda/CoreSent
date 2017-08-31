@@ -1,17 +1,17 @@
 # CorSens
 
-##What is CorSens api ?
->CorSen is an abbrivation for Correct Sentences, it's a newly created api in Java language that enhance better sentences for web/mobile apps users.
+# What is CorSens api ?
+> CorSen is an abbrivation for Correct Sentences, it's a newly created api in Java language that enhance better sentences for web/mobile apps users.
 
-#What problem is CorSens solving ?
->CorSens is currently solving a single problem, to rewrite incorrect sentences with punctuation signs followed with inappropiate case.
->>Example : A user type the following on Facebook
+# What problem is CorSens solving ?
+> CorSens is currently solving a single problem, to rewrite incorrect sentences with punctuation signs followed with inappropiate case.
+>> Example : A user type the following on Facebook
 
 - [hi guys, We arE releasing our next mobile App version 1.x tomorrow,i personally will make sure it'S error
 free and new features are shipped with it.please download on playstore latest by 12:00pm g.m.t  tomorrow.thanks] (#text)
 
 
->>>CorSens approach : This text above have some errors which can be auto fix by the api
+>>> CorSens approach : This text above have some errors which can be auto fix by the api
 
 - [Errors : Note ErrSens means error sentence ]
 
@@ -48,7 +48,7 @@ when used
 
 - 5.  ErrSens: 12:00pm g.m.t 
     CorSens: 12:00PM G.M.T
-~~g.m.t is an abrrevation which all words must be in capital letter
+g.m.t is an abrrevation which all words must be in capital letter
 "G.M.T"
 
 
@@ -57,7 +57,7 @@ when used
 
 
 
-##What is the limitation of your API ?
+## What is the limitation of your API ?
 
 <br>There are many limitations</br> 
 
@@ -71,35 +71,35 @@ text have their rules as stated above
 Situation where user type areE, the api correct it to "aree", which is not an existing word in english. We just started CorSens API, and we hope to improve daily .
 
 
-##So, your api "CorSens" can only rewrite or correct word with inappropiate
+## So, your api "CorSens" can only rewrite or correct word with inappropiate
 punctuation signs ?
 
 >Yes.
 
-##Will both users need such ?
+## Will both users need such ?
 
->>Some will definetly use , while some may not .
+>> Some will definetly use , while some may not .
 
-##So, what is the need for this ?
+## So, what is the need for this ?
 
->>Our focus is to have single well written and open source api that will provide well written and syntax error free sentence for users on any platofrm ( web & mobile ). We just started, currently our api solves the following
+>> Our focus is to have single well written and open source api that will provide well written and syntax error free sentence for users on any platofrm ( web & mobile ). We just started, currently our api solves the following
 
- >1.Sentence or words with inappropiate lower or upper case as stated in 3
+ > 1.Sentence or words with inappropiate lower or upper case as stated in 3
 
 
-##Technically speaking, what is your approach for this api ?
+## Technically speaking, what is your approach for this api ?
 
->Our API, currently solves the above stated problem in a similar manner to
+> Our API, currently solves the above stated problem in a similar manner to
 how humans correct or rewrite sentence "read and correct one after the other".
  Uisng advance stream looping to walk though the sentences one by one
 , rewriting and assigning it to a the same variable.
 
 
-#Is that all ?
+# Is that all ?
 
->Yes, that is currently what we have achieved, more algorith coming to CorSens
+> Yes, that is currently what we have achieved, more algorith coming to CorSens
 
-#How can I use your api in my Java program ?
+# How can I use your api in my Java program ?
 
 Maven users, add to your depencency
 <br/>
