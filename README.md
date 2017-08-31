@@ -2,12 +2,12 @@
 
 >What is CorSens api ?
 
--CorSen is an abbrivation for Correct Sentences, it's a newly created api in Java language that enhance better sentences for web/mobile apps users.
+CorSen is an abbrivation for Correct Sentences, it's a newly created api in Java language that enhance better sentences for web/mobile apps users.
 
->What problem is CorSens solving ?
+>>What problem is CorSens solving ?
 CorSens is currently solving a single problem, to rewrite incorrect sentences with punctuation signs followed with inappropiate case.
 
--Example
+Example
 A user type the following on Facebook.
 
 
@@ -15,16 +15,16 @@ hi guys, We arE releasing our next mobile App version 1.x tomorrow,i personally 
 free and new features are shipped with it.please download on playstore latest by 12:00pm g.m.t  tomorrow.thanks
 
 
->CorSens approach : This text above have some errors which can be auto fix by the api
+>>>CorSens approach : This text above have some errors which can be auto fix by the api
 
 -Errors ( Note ErrSens means error sentence )
 
- >1.  ErrSens :hi guys
+ 1.  ErrSens :hi guys
     CoreSens : Hi guys
 
- -A sentence must start with capital letter
+ A sentence must start with capital letter
 
--2. ErrSens : We arE .. mobile App..
+2. ErrSens : We arE .. mobile App..
    CorSesns : we are... mobile app
 
 >Capital letter must not start or end with a word  before comma ","  in any condition, except for abbrevation and it must all be in capital letter.
@@ -129,13 +129,12 @@ Yes, that is currently what we have achieved, more algorith coming to CorSens
 How can I use your api in my Java program ?
 
 Maven users, add to your depencency
-<code>
+<br/>
 <dependency>
  <groupId>com.futureisnow.text.corsens</groupId>
  <artifactId>CorSens</artifactId>
  <version>0.1</version>
 </dependency>
-</code>
 <br/>
 <code>
 import com.futureisnow.text.corsens.StreamText;
