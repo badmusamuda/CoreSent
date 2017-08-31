@@ -1,17 +1,17 @@
-# CorSens
+# CoreSent
 
-# What is CorSens api ?
+# What is CoreSent api ?
 > CorSen is an abbrivation for Correct Sentences, it's a newly created api in Java language that enhance better sentences for web/mobile apps users.
 
-# What problem is CorSens solving ?
-> CorSens is currently solving a single problem, to rewrite incorrect sentences with punctuation signs followed with inappropiate case.
+# What problem is CoreSent solving ?
+> CoreSent is currently solving a single problem, to rewrite incorrect sentences with punctuation signs followed with inappropiate case.
 >> Example : A user type the following on Facebook
 
 - [hi guys, We arE releasing our next mobile App version 1.x tomorrow,i personally will make sure it'S error
 free and new features are shipped with it.please download on playstore latest by 12:00pm g.m.t  tomorrow.thanks] (#text)
 
 
->>> CorSens approach : This text above have some errors which can be auto fix by the api
+>>> CoreSent approach : This text above have some errors which can be auto fix by the api
 
 - [Errors : Note ErrSens means error sentence ]
 
