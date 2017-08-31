@@ -1,43 +1,38 @@
 # CorSens
 
->What is CorSens api ?
+##What is CorSens api ?
+>CorSen is an abbrivation for Correct Sentences, it's a newly created api in Java language that enhance better sentences for web/mobile apps users.
 
-CorSen is an abbrivation for Correct Sentences, it's a newly created api in Java language that enhance better sentences for web/mobile apps users.
+#What problem is CorSens solving ?
+>CorSens is currently solving a single problem, to rewrite incorrect sentences with punctuation signs followed with inappropiate case.
+>>Example : A user type the following on Facebook
 
->>What problem is CorSens solving ?
-CorSens is currently solving a single problem, to rewrite incorrect sentences with punctuation signs followed with inappropiate case.
-
-Example
-A user type the following on Facebook.
-
-
-hi guys, We arE releasing our next mobile App version 1.x tomorrow,i personally will make sure it'S error
-free and new features are shipped with it.please download on playstore latest by 12:00pm g.m.t  tomorrow.thanks
+- [hi guys, We arE releasing our next mobile App version 1.x tomorrow,i personally will make sure it'S error
+free and new features are shipped with it.please download on playstore latest by 12:00pm g.m.t  tomorrow.thanks] (#text)
 
 
 >>>CorSens approach : This text above have some errors which can be auto fix by the api
 
--Errors ( Note ErrSens means error sentence )
+- [Errors : Note ErrSens means error sentence ]
 
- 1.  ErrSens :hi guys
-    CoreSens : Hi guys
+ - 1.  ErrSens :hi guys
+       CoreSens : Hi guys
+     >A sentence must start with capital letter
 
- A sentence must start with capital letter
+- 2. ErrSens : We arE .. mobile App..
+   > CorSesns : we are... mobile app
 
-2. ErrSens : We arE .. mobile App..
-   CorSesns : we are... mobile app
+----------------------Capital letter must not start or end with a word  before comma ","  in any condition, except for abbrevation and it must all be in capital letter.---------------------
 
->Capital letter must not start or end with a word  before comma ","  in any condition, except for abbrevation and it must all be in capital letter.
-
-The word app is an short hand form of  writing "applications" which must all be in lower case i.e  except for personal pronouns like "I, ..."  can only be in capital letter in any sentence
+ ##The word app is an short hand form of  writing "applications" which must all be in lower case i.e  except for personal pronouns like "I, ..."  can only be in capital letter in any sentence
 
 
->3.  ErrSens: ...tomorrow,i personally 
+- 3.  ErrSens: ...tomorrow,i personally 
     CorSens: ...tomorrow, I personally
 
 Any word followed with any punctuation must be followed by a white
 space, along with thier rules
-  
+  <br>
   i. All personal pronouns(I,...) must be in Capital letter
 when used
   ii. All words or latter followed by comma ","must be in small letter
@@ -45,88 +40,66 @@ when used
   iv. All words or latter followed by apostrophe "!"must be in capital letter
   v. All words or latter followed by comma "," must be in small letter
   vi. All words or latter followed by question mark "?" must be in small letter
-  
-
-
-4. ErrSens: with it.please
+  </br>
+- 4. ErrSens: with it.please
    CorSens: with it. Please
 
+||Using rule 3(iii)
 
-Using rule 3(iii)
-
-
-
-5.  ErrSens: 12:00pm g.m.t 
+- 5.  ErrSens: 12:00pm g.m.t 
     CorSens: 12:00PM G.M.T
-
-g.m.t is an abrrevation which all words must be in capital letter
+~~g.m.t is an abrrevation which all words must be in capital letter
 "G.M.T"
 
 
-6.  ErrSens: tomorrow.thanks
+- 6.  ErrSens: tomorrow.thanks
     CorSens: tomorrow. Thanks
 
 
 
-What is the limitation of your API ?
+##What is the limitation of your API ?
 
-There are many limitations 
+<br>There are many limitations</br> 
 
-1. Correcting newly created word,
+- 1. Correcting newly created word,
 
-Example : word "CorSens", the api will see this as error, 
-and will be written as "Corsens" or "corsens" as all english
+Example : word "CorSens", the api will see this as error,  and will be written as "Corsens" or "corsens" as all english
 text have their rules as stated above
 
-2. Correcting mispelled words
+- 2. Correcting mispelled words
 
-Situation where user type areE, the api correct it to "aree", which is not
-an existing word in english
-
-
-We just started CorSens API, and we hope to improve daily .
+Situation where user type areE, the api correct it to "aree", which is not an existing word in english. We just started CorSens API, and we hope to improve daily .
 
 
-
-So, your api "CorSens" can only rewrite or correct word with inappropiate
+##So, your api "CorSens" can only rewrite or correct word with inappropiate
 punctuation signs ?
 
-Yes.
+>Yes.
+
+##Will both users need such ?
+
+>>Some will definetly use , while some may not .
+
+##So, what is the need for this ?
+
+>>Our focus is to have single well written and open source api that will provide well written and syntax error free sentence for users on any platofrm ( web & mobile ). We just started, currently our api solves the following
+
+ >1.Sentence or words with inappropiate lower or upper case as stated in 3
 
 
+##Technically speaking, what is your approach for this api ?
 
-Will users need such ?
-
-Some will definetly use , while some may not .
-
-
-
-So, what is the need for this ?
-
-Our focus is to have single well written and open source api
-that will provide well written and syntax error free
-sentence for users on any platofrm ( web & mobile ).
-
-We just started, currently our api solves the following
-
-1.Sentence or words with inappropiate lower or upper case as stated in 3
-
-
-Technically speaking, what is your approach for this api ?
-
-Our API, currently solves the above stated problem in a similar manner to
+>Our API, currently solves the above stated problem in a similar manner to
 how humans correct or rewrite sentence "read and correct one after the other".
  Uisng advance stream looping to walk though the sentences one by one
 , rewriting and assigning it to a the same variable.
 
 
-Is that all ?
+#Is that all ?
 
+>Yes, that is currently what we have achieved, more algorith coming to CorSens
 
-Yes, that is currently what we have achieved, more algorith coming to CorSens
-
-
-How can I use your api in my Java program ?
+#How can I use your api in my Java program ?
 
 Maven users, add to your depencency
 <br/>
@@ -136,7 +109,7 @@ Maven users, add to your depencency
  <version>0.1</version>
 </dependency>
 <br/>
-<code>
+
 import com.futureisnow.text.corsens.StreamText;
 public class App{
 
@@ -164,7 +137,6 @@ String output_1 = StreamText.(message)
 System.out.println(output);
 
 }
-</code>
 <br/>
 Output :
 <img src="output.png"/>
