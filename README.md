@@ -17,10 +17,20 @@ Full of grammar and syntax error ?
 
 
 ```Java
-Stream.ThisText(message)
-			.checkComma(',')
-			.checkFullStop('.')
-			.toCorSens();
+String output = StreamText.(message)
+                          .checkFullStop()
+                          .checkComman()
+                          .checkThis("!",",","?","/")
+                          .toCorSens;
+
+// or
+
+String output_1 = StreamText.(message)
+                          .checkAllSyntax()
+                          .toCorSens;
+
+
+System.out.println(output);
 ```
 
 Beautifully succinct right?
@@ -33,15 +43,18 @@ make sure it's error; Free and new features are shipped with it.Please download 
 playstore latest by 12:00pm g.M.T tomorrow.Thanks
 ```
 
+<img src="output.png"/>
+
 # Getting started
 
 
 > What is CoreSent.java ?
->> CorSen is an abbrivation for Correct Sentences, it's a newly created api in Java language that enhance better sentences for web/mobile apps users.
+
+CorSen is an abbrivation for Correct Sentences, it's a newly created api in Java language that enhance better sentences for web/mobile apps users.
 
 # What problem is CoreSent solving ?
-> CoreSent is currently solving a single problem, to rewrite incorrect sentences with punctuation signs followed with inappropiate case.
->> Example : A user type the following on Facebook
+CoreSent is currently solving a single problem, to rewrite incorrect sentences with punctuation signs followed with inappropiate case.
+> Example : A user type the following on Facebook
 
 - [hi guys, We arE releasing our next mobile App version 1.x tomorrow,i personally will make sure it'S error
 free and new features are shipped with it.please download on playstore latest by 12:00pm g.m.t  tomorrow.thanks] (#text)
@@ -53,7 +66,7 @@ free and new features are shipped with it.please download on playstore latest by
 
  - 1.  ErrSens :hi guys
        CoreSens : Hi guys
-     >A sentence must start with capital letter
+     > A sentence must start with capital letter
 
 - 2. ErrSens : We arE .. mobile App..
    > CorSesns : we are... mobile app
@@ -157,26 +170,28 @@ tomorrow.thanks";
 
 public static void main (String[]args){
 
-String output = StreamText.(message)
-                          .checkFullStop()
-                          .checkComman()
-                          .checkThis("!",",","?","/")
-                          .toCorSens;
 
-// or
-
-String output_1 = StreamText.(message)
-                          .checkAllSyntax()
-                          .toCorSens;
-
-
-System.out.println(output);
 
 }
 <br/>
 Output :
-<img src="output.png"/>
 
 -Do you still want to asnwer more question ?
 
 <b>No</b>
+
+# [Documentation](https://github.com/badmusamuda/CoreSent/blob/master/api/documentation.md)
+
+The stream-js API is available [here](https://github.com/badmusamuda/CoreSent/blob/master/api/documentation.md)
+
+# Contributing
+
+Got ideas to improve CoreSent.java? Or found a bug? Please file a new [issue] (https://github.com/badmusamuda/CoreSent/issues/new). 
+
+
+# Copyright and license
+
+Created and copyright (c) 2015 by Amuda Adeolu Badmus.
+
+CoreSent.java is licensed under the [Apache license](https://github.com/badmusamuda/CoreSent/blob/master/LICENSE).
+
