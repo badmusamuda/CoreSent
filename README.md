@@ -6,7 +6,7 @@
 What do you think of the following sentence?
 
 ```text
-
+//Old text
 String message = "hi guys,       We arE releasing our next mobile App version\n" +
                     "1.x tomorrow,i personally will make sure it'S error;\n" +
                     "free and new features are shipped with it.please\n" +
@@ -18,22 +18,25 @@ Full of grammar and syntax error ?
 
 ```Java
 Stream.ThisText(message)
-							.checkComma(',')
-							.checkFullStop('.')
-							.toCorSens();
+			.checkComma(',')
+			.checkFullStop('.')
+			.toCorSens();
 ```
 
 Beautifully succinct right?
 
 
 ```text
-Hi guys, we are releasing our next mobile app version 1.X tomorrow,i personally will make sure it's error; Free and new features are shipped with it.Please download on playstore latest by 12:00pm g.M.T tomorrow.Thanks
+//New text
+Hi guys, we are releasing our next mobile app version 1.X tomorrow,i personally will 
+make sure it's error; Free and new features are shipped with it.Please download on 
+playstore latest by 12:00pm g.M.T tomorrow.Thanks
 ```
 
 # Getting started
 
 
-> What is CoreSent.Stream api ?
+> What is CoreSent.java ?
 >> CorSen is an abbrivation for Correct Sentences, it's a newly created api in Java language that enhance better sentences for web/mobile apps users.
 
 # What problem is CoreSent solving ?
