@@ -1,6 +1,6 @@
 # CoreSent.java
 
-[![Build Status](https://travis-ci.org/abdulapopoola/Stream.svg?branch=master)](https://travis-ci.org/abdulapopoola/Stream) [![Dependencies](https://david-dm.org/abdulapopoola/Stream.svg)](https://david-dm.org/abdulapopoola/Stream.svg) [![devDependency Status](https://david-dm.org/abdulapopoola/Stream/dev-status.svg)](https://david-dm.org/abdulapopoola/Stream#info=devDependencies) 
+[![Build Status](https://travis-ci.org/abdulapopoola/Stream.svg?branch=master)](https://travis-ci.org/abdulapopoola/Stream) [![Maven Dependency](https://david-dm.org/abdulapopoola/Stream.svg)](https://david-dm.org/abdulapopoola/Stream.svg) [![Gradle Dependency Status](https://david-dm.org/abdulapopoola/Stream/dev-status.svg)](https://david-dm.org/abdulapopoola/Stream#info=devDependencies) 
 ========================
 
 What do you think of the following sentence?
@@ -18,16 +18,19 @@ Full of grammar and syntax error ?
 
 ```Java
 String output = StreamText.(message)
-                          .checkFullStop()
-                          .checkComman()
-                          .checkThis("!",",","?","/")
-                          .toCorSens;
+                          .checkFullStop('.')
+                          .checkThis('!',',','?','/')
+                          .toCapitalLetter();
+                          .checkComma(',')
+                          .checkThis(':',',','|','-')
+                          .toSmallLetter()
+                          .toCoreSent();
 
 // or
 
 String output_1 = StreamText.(message)
                           .checkAllSyntax()
-                          .toCorSens;
+                          .toCoreSent();
 
 
 System.out.println(output);
@@ -53,6 +56,7 @@ playstore latest by 12:00pm g.M.T tomorrow.Thanks
 CorSen is an abbrivation for Correct Sentences, it's a newly created api in Java language that enhance better sentences for web/mobile apps users.
 
 # What problem is CoreSent solving ?
+
 CoreSent is currently solving a single problem, to rewrite incorrect sentences with punctuation signs followed with inappropiate case.
 > Example : A user type the following on Facebook
 
@@ -73,7 +77,7 @@ free and new features are shipped with it.please download on playstore latest by
 
 ----------------------Capital letter must not start or end with a word  before comma ","  in any condition, except for abbrevation and it must all be in capital letter.---------------------
 
- ## The word app is an short hand form of  writing "applications" which must all be in lower case i.e  except for personal pronouns like "I, ..."  can only be in capital letter in any sentence
+ -- The word app is an short hand form of  writing "applications" which must all be in lower case i.e  except for personal pronouns like "I, ..."  can only be in capital letter in any sentence
 
 
 -  3.  ErrSens: ...tomorrow,i personally 
@@ -150,31 +154,49 @@ how humans correct or rewrite sentence "read and correct one after the other".
 
 # How can I use your api in my Java program ?
 
-Maven users, add to your depencency
+
+```Java
+              Maven users, add to your depencency
 <br/>
-<dependency>
- <groupId>com.futureisnow.text.corsens</groupId>
- <artifactId>CorSens</artifactId>
- <version>0.1</version>
-</dependency>
+    <dependency>
+        <groupId>com.futureisnow.text.corsens</groupId>
+        <artifactId>CorSens</artifactId>
+        <version>0.1</version>
+    </dependency>
 <br/>
+
+TestCoreSent.java
 
 import com.futureisnow.text.corsens.StreamText;
 public class App{
+      private static String message = "hi guys, We arE releasing our next mobile App version
+                                        1.x tomorrow,i personally will make sure it'S error
+                                          free and new features are shipped with it.please
+                                            download on playstore latest by 12:00pm g.m.t 
+                                              tomorrow.thanks";
 
-private static String message = "hi guys, We arE releasing our next mobile App version
-1.x tomorrow,i personally will make sure it'S error
-free and new features are shipped with it.please
-download on playstore latest by 12:00pm g.m.t 
-tomorrow.thanks";
+      public static void main (String[]args){
+     
+            String output = StreamText.(message)
+                                      .checkFullStop('.')
+                                      .checkThis('!',',','?','/')
+                                      .toCapitalLetter();
+                                      .checkComma(',')
+                                      .checkThis(':',',','|','-')
+                                      .toSmallLetter()
+                                      .toCoreSent();
 
-public static void main (String[]args){
+// or
 
+          String output_1 = StreamText.(message)
+                                .checkAllSyntax()
+                                .toCoreSent();
 
+          System.out.println(output);
+      }
 
 }
-<br/>
-Output :
+```
 
 -Do you still want to asnwer more question ?
 
