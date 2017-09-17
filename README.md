@@ -1,7 +1,40 @@
-# CoreSent
+# CoreSent.java
 
-# What is CoreSent api ?
-> CorSen is an abbrivation for Correct Sentences, it's a newly created api in Java language that enhance better sentences for web/mobile apps users.
+[![Build Status](https://travis-ci.org/abdulapopoola/Stream.svg?branch=master)](https://travis-ci.org/abdulapopoola/Stream) [![Dependencies](https://david-dm.org/abdulapopoola/Stream.svg)](https://david-dm.org/abdulapopoola/Stream.svg) [![devDependency Status](https://david-dm.org/abdulapopoola/Stream/dev-status.svg)](https://david-dm.org/abdulapopoola/Stream#info=devDependencies) 
+========================
+
+What do you think of the following sentence?
+
+```text
+
+String message = "hi guys,       We arE releasing our next mobile App version\n" +
+                    "1.x tomorrow,i personally will make sure it'S error;\n" +
+                    "free and new features are shipped with it.please\n" +
+                    "download on playstore latest by 12:00pm g.m.t \n" +
+                    "tomorrow.thanks\n";
+```
+Full of grammar and syntax error ?
+
+
+```Java
+Stream.ThisText(message)
+							.checkComma(',')
+							.checkFullStop('.')
+							.toCorSens();
+```
+
+Beautifully succinct right?
+
+
+```text
+Hi guys, we are releasing our next mobile app version 1.X tomorrow,i personally will make sure it's error; Free and new features are shipped with it.Please download on playstore latest by 12:00pm g.M.T tomorrow.Thanks
+```
+
+# Getting started
+
+
+> What is CoreSent.Stream api ?
+>> CorSen is an abbrivation for Correct Sentences, it's a newly created api in Java language that enhance better sentences for web/mobile apps users.
 
 # What problem is CoreSent solving ?
 > CoreSent is currently solving a single problem, to rewrite incorrect sentences with punctuation signs followed with inappropiate case.
@@ -11,7 +44,7 @@
 free and new features are shipped with it.please download on playstore latest by 12:00pm g.m.t  tomorrow.thanks] (#text)
 
 
->>> CoreSent approach : This text above have some errors which can be auto fix by the api
+> CoreSent approach : This text above have some errors which can be auto fix by the api
 
 - [Errors : Note ErrSens means error sentence ]
 
@@ -24,10 +57,10 @@ free and new features are shipped with it.please download on playstore latest by
 
 ----------------------Capital letter must not start or end with a word  before comma ","  in any condition, except for abbrevation and it must all be in capital letter.---------------------
 
- ##The word app is an short hand form of  writing "applications" which must all be in lower case i.e  except for personal pronouns like "I, ..."  can only be in capital letter in any sentence
+ ## The word app is an short hand form of  writing "applications" which must all be in lower case i.e  except for personal pronouns like "I, ..."  can only be in capital letter in any sentence
 
 
-- 3.  ErrSens: ...tomorrow,i personally 
+-  3.  ErrSens: ...tomorrow,i personally 
     CorSens: ...tomorrow, I personally
 
 Any word followed with any punctuation must be followed by a white
@@ -44,7 +77,7 @@ when used
 - 4. ErrSens: with it.please
    CorSens: with it. Please
 
-||Using rule 3(iii)
+|| Using rule 3(iii)
 
 - 5.  ErrSens: 12:00pm g.m.t 
     CorSens: 12:00PM G.M.T
@@ -74,7 +107,7 @@ Situation where user type areE, the api correct it to "aree", which is not an ex
 ## So, your api "CorSens" can only rewrite or correct word with inappropiate
 punctuation signs ?
 
->Yes.
+> Yes.
 
 ## Will both users need such ?
 
