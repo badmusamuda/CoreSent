@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/abdulapopoola/Stream.svg?branch=master)](https://travis-ci.org/abdulapopoola/Stream) [![Maven Dependency](https://david-dm.org/abdulapopoola/Stream.svg)](https://david-dm.org/abdulapopoola/Stream.svg) [![Gradle Dependency Status](https://david-dm.org/abdulapopoola/Stream/dev-status.svg)](https://david-dm.org/abdulapopoola/Stream#info=devDependencies) 
 ========================
 
-What do you think of the following sentence?
+What do you think about this sentence?
 
 ```text
 //Old text
