@@ -1,6 +1,6 @@
 # CoreSent.java
 
-[![Build Status](https://amudabadmus.wordpress.com?branch=master)](https://amudabadmus.wordpress.com/Stream) [![Maven Dependency](https://amudabadmus.wordpress.com/Stream.svg)](https://amudabadmus.wordpress.com/Stream.svg) [![Gradle Dependency Status](https://amudabadmus.wordpress.com/Stream/dev-status.svg)](https://amudabadmus.wordpress.com/Stream#info=devDependencies) 
+[![Build Status](https://amudabadmus.wordpress.com?branch=master)(https://amudabadmus.wordpress.com/Stream) [![Maven Dependency](https://amudabadmus.wordpress.com/Stream.svg)](https://amudabadmus.wordpress.com/Stream.svg) [![Gradle Dependency Status](https://amudabadmus.wordpress.com/Stream/dev-status.svg)](https://amudabadmus.wordpress.com/Stream#info=devDependencies) 
 ========================
 
 What do you think about this sentence?
@@ -57,7 +57,7 @@ CorSen is an abbrivation for Correct Sentences, it's a newly created api in Java
 
 >> Our focus is to have single well written and efficient open source api that will provide well written and error free sentence for users on any platofrm ( web & mobile ). We just started, currently our api solves the following
 
- > 1.Sentence or words with inappropiate lower or upper case
+-. 1.Sentence or words with inappropiate lower or upper case
 
 
 ## Technically speaking, what is your approach for this api ?
@@ -84,8 +84,10 @@ how humans correct or rewrite sentence "read and correct one after the other".
         <version>0.1</version>
     </dependency>
 <br/>
+```
 
-TestCoreSent.java
+<h4>TestCoreSent.java</h4>
+```Java
 
 import com.futureisnow.text.corsens.StreamText;
 public class App{
@@ -124,7 +126,7 @@ public class App{
 
 # [Documentation](https://github.com/badmusamuda/CoreSent/blob/master/api/documentation.md)
 
-The stream-js API is available [here](https://github.com/badmusamuda/CoreSent/blob/master/api/documentation.md)
+The CoreSent.java API is available [here](https://github.com/badmusamuda/CoreSent/blob/master/api/documentation.md)
 
 # Contributing
 
