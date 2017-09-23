@@ -87,8 +87,8 @@ how humans correct or rewrite sentence "read and correct one after the other".
 ```
 
 <h4>TestCoreSent.java</h4>
-```Java
 
+```Java
 import com.futureisnow.text.corsens.StreamText;
 public class App{
       private static String message = "hi guys, We arE releasing our next mobile App version
@@ -107,9 +107,7 @@ public class App{
                                       .checkThis(':',',','|','-')
                                       .toSmallLetter()
                                       .toCoreSent();
-
 // or
-
           String output_1 = StreamText.(message)
                                 .checkAllSyntax()
                                 .toCoreSent();
@@ -118,11 +116,9 @@ public class App{
       }
 
 }
+
 ```
 
--Do you still want to asnwer more question ?
-
-<b>No</b>
 
 # [Documentation](https://github.com/badmusamuda/CoreSent/blob/master/api/documentation.md)
 
