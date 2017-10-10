@@ -1,7 +1,5 @@
 # CoreSent.java
 
-[![Build Status](https://amudabadmus.wordpress.com?branch=master)(https://amudabadmus.wordpress.com/Stream) [![Maven Dependency](https://amudabadmus.wordpress.com/Stream.svg)](https://amudabadmus.wordpress.com/Stream.svg) [![Gradle Dependency Status](https://amudabadmus.wordpress.com/Stream/dev-status.svg)](https://amudabadmus.wordpress.com/Stream#info=devDependencies) 
-========================
 
 What do you think about this sentence?
 
@@ -53,17 +51,17 @@ playstore latest by 12:00pm g.M.T tomorrow.Thanks
 
 > What is CoreSent.java ?
 
-CorSen is an abbrivation for Correct Sentences, it's a newly created api in Java language that enhance better sentences for web/mobile apps users.
+CorSen is an abbrivation for Correct Sentence, it's a newly created api in Java language that enhance better sentence for web/mobile apps users.
 
->> Our focus is to have single well written and efficient open source api that will provide well written and error free sentence for users on any platofrm ( web & mobile ). We just started, currently our api solves the following
+> Our focus is to have single well written and efficient open source api that will provide error free sentence for users on any platofrm ( web & mobile ). 
 
 -. 1.Sentence or words with inappropiate lower or upper case
 
 
-## Technically speaking, what is your approach for this api ?
+# What is your approach for this api ?
 
 > Our API, currently solves the above stated problem in a similar manner to
-how humans correct or rewrite sentence "read and correct one after the other".
+how humans correct or rewrite sentences "read and correct one after the other".
  Uisng advance stream looping to walk though the sentences one by one
 , rewriting and assigning it to a the same variable.
 
@@ -118,10 +116,6 @@ public class App{
 }
 
 ```
-
-
-# [Documentation](https://github.com/badmusamuda/CoreSent/blob/master/api/documentation.md)
-
 The CoreSent.java API is available [here](https://github.com/badmusamuda/CoreSent/blob/master/api/documentation.md)
 
 # Contributing
@@ -134,4 +128,3 @@ Got ideas to improve CoreSent.java? Or found a bug? Please file a new [issue] (h
 Created and copyright (c) 2017 by Amuda Adeolu Badmus.
 
 CoreSent.java is licensed under the [Apache license](https://github.com/badmusamuda/CoreSent/blob/master/LICENSE).
-
